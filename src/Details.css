@@ -1,0 +1,106 @@
+/* Details.css */
+
+.details-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  .drug-list {
+    padding-left: 20px;
+  }
+  
+  .age-group-list {
+    padding-left: 20px;
+  }
+  
+  .gender-list {
+    padding-left: 20px;
+  }
+  
+  .gender {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .age-group {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .drug-name {
+    font-weight: bold;
+    color: #6c757d;
+  }
+
+
+  .collapsible-section {
+    margin-top: 20px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .toggle-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #555 transparent transparent transparent;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-icon.open {
+    transform: rotate(180deg);
+  }
+  
+  .section-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .section-content > * {
+    margin-bottom: 10px;
+  }
+  
+  .section-content.closed {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
